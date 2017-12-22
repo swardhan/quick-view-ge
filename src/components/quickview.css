@@ -1,0 +1,45 @@
+/*For Centering*/
+#quickview {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*For Styling*/
+#quickview {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 70%;
+}
+
+#quickview > .content {
+  background-color: white;
+  flex-grow: 10;
+}
+
+.fa-times {
+  cursor: pointer;
+}
+
+.fa-chevron-left{
+  cursor: pointer;
+}
+
+.fa-chevron-right{
+  cursor: pointer;
+}
+
+#next, #prev {
+  position: relative;
+  flex-grow: 0;
+  width: 10%;
+  background-color: rgba(0,0,0,0);
+}
+
+#next > i, #prev > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
