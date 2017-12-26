@@ -4,13 +4,19 @@ import './quickview.css';
 import './popup.css';
 
 class QuickView extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
-            value: -1
+            value: props.index
         }
     }
+
+    handleNext = () => {
+        this.setState(prevState => ({ value: prevState.value+1 }));
+    }
+
   render() {
+        console.log(this.state);
     return(
       <div className='modal'>
         <div className='modal-inner'>
@@ -20,7 +26,7 @@ class QuickView extends Component {
                   <i className="fa fa-times" onClick={ () => this.props.store.dispatch(closePopup()) }></i>
                     Column 2, {this.state.value}
                 </div>
-              <div id='next'><i className='fa fa-chevron-right fa-5x'></i></div>
+              <div id='next'><i className='fa fa-chevron-right fa-5x' onClick={this.handleNext}></i></div>
             </div>
         </div>
       </div>

@@ -1,16 +1,25 @@
 const initialState = {
-    popup: null
+    popup: {
+        type: null,
+        index: null
+    }
 }
 
 function popup(state =  initialState, action) {
     switch(action.type){
         case 'QUICK_VIEW':
             return {
-                popup: 'quick-view'
-            }
+                popup: {
+                    type: 'quick-view',
+                    index: action.payload.index
+                    }
+                }
         case 'CLOSE_POPUP':
             return {
-                popup: null
+                popup: {
+                    type: null,
+                    index: null
+                }
             }
         default:
             return state;

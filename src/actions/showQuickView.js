@@ -1,6 +1,10 @@
-function showQuickView() {
+function showQuickView(index) {
     return {
-        type: 'QUICK_VIEW'
+        type: 'QUICK_VIEW',
+        payload: {
+            index
+        }
+
     }
 }
 
