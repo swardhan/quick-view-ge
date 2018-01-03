@@ -26,7 +26,7 @@ class App extends Component {
     findPopup(popupType, data) {
         switch(popupType) {
             case 'quick-view':
-                return <QuickView store = {this.props.store} index={data} />;
+                return <QuickView store = {this.props.store} products={data.products} index={data.index}/>;
             default:
                 return null;
         }
@@ -34,13 +34,16 @@ class App extends Component {
     }
 
     render() {
-        let temp = this.findPopup(this.props.popup.type, this.props.popup.index);
+        let temp = this.findPopup(
+                this.props.popup.type,
+                {products: this.state.products, index: this.props.popup.index}
+            );
         let arr = [];
         this.state.products.forEach(function(product, index){
             arr.push(
                 <div key = {index}>
                     <button onClick={() => {
-                        this.props.showQuickView(index);
+                        this.props.showQuickView(this.state.products, index);
                     }} index={index}>{index+1}</button>
                     <div>
                         {product.title}
@@ -66,7 +69,8 @@ function mapStateToProps(state) {
     return {
         popup: {
             type: state.popup.type,
-            index: state.popup.index
+            index: state.popup.index,
+            products: state.popup.products
         }
     };
 }

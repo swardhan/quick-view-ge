@@ -1,0 +1,172 @@
+/* line 5, ../../../.rvm/gems/ruby-2.3.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-2.3.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.3.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.3.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.3.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.3.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.3.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.3.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.3.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**********************************************  PLP   ******************************************************/
+/**********************************************  PDP   ******************************************************/
+/*******************************  Login  **************************/
+/* line 8, ../sass/style.scss */
+.details-color {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+/* line 13, ../sass/style.scss */
+.details-color .title {
+  font-size: 8px;
+  font-family: Amiri;
+  color: #999999;
+}
+/* line 19, ../sass/style.scss */
+.details-size {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+/* line 24, ../sass/style.scss */
+.details-size .size {
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  margin-right: 3px;
+  border-radius: 15px;
+}
+/* line 32, ../sass/style.scss */
+.details-size .size-selected {
+  border: 2px solid black;
+}
+/* line 35, ../sass/style.scss */
+.details-size .size-unavailable {
+  color: grey;
+}
+/* line 39, ../sass/style.scss */
+.details-size .title {
+  font-size: 8px;
+  font-family: Amiri;
+  color: #999999;
+}
+/* line 45, ../sass/style.scss */
+.details-quantity {
+  margin-bottom: 15px;
+}
+/* line 47, ../sass/style.scss */
+.details-quantity .title {
+  font-size: 8px;
+  font-family: Amiri;
+  color: #999999;
+}
+/* line 53, ../sass/style.scss */
+.details-cart {
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+}
+/* line 57, ../sass/style.scss */
+.details-cart .cart {
+  text-align: center;
+  vertical-align: middle;
+  height: 40px;
+  background-color: #c73a8e;
+  color: white;
+}
+/* line 64, ../sass/style.scss */
+.details-cart .wishlist {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 71, ../sass/style.scss */
+.fa-times {
+  float: right;
+  cursor: pointer;
+}
+
+/* line 76, ../sass/style.scss */
+.pdp_coll_name {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999999;
+  letter-spacing: 2px;
+  font-family: Amiri;
+  line-height: 30px;
+}
+
+/* line 80, ../sass/style.scss */
+.pdp_prod_name {
+  font-size: 22px;
+  color: #000;
+  font-family: Amiri;
+}
+
+/* line 84, ../sass/style.scss */
+.img {
+  background-color: grey;
+  height: 100px;
+  width: 50px;
+  margin-left: 10px;
+}

@@ -10,7 +10,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 70%;
 }
 
 #quickview > .content {
@@ -42,4 +41,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.micro_container {
+  display: block;
+}
+
+.micro_images {
+  width: 100%;
+  height:
 }

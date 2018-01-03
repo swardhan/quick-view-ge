@@ -1,8 +1,9 @@
-function showQuickView(index) {
+function showQuickView(products, index) {
     return {
         type: 'QUICK_VIEW',
         payload: {
-            index
+            index,
+            products
         }
 
     }
